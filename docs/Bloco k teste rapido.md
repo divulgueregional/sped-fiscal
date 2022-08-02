@@ -1,7 +1,9 @@
 # TESTE RÁPIDO BLOCO K SPED-FISCAL
 
 ## Introdução
-Gerar o arquivo teste bloco k do sped fiscal.
+Teste rápido: Gerar o arquivo bloco k do sped fiscal.<br>
+Não precisa alterar nenhum valor<br>
+Só colocar no php e rodar que vai salvar o arquivo na pasta
 
 ```php
     require_once '../../../vendor/autoload.php';
