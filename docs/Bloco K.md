@@ -21,7 +21,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=1
 | $std | stdClass | Abertura do Arquivo Digital e Identificação da entidade. |
 
 ```php
-    $std = new stdClass; // Abertura do Arquivo Digital e Identificação da entidade.
+    $std = new stdClass;
     $std->versaoLayout = '016'; // Código da versão do leiaute conforme a Tabela indicada no Ato Cotepe.
     $std->finalidadeArquivo = '0'; // Código da finalidade do arquivo: 0: Remessa do arquivo original; ou 1: Remessa do arquivo substituto.
     $std->dataInicial = '01082022'; // Data inicial das informações contidas no arquivo.
@@ -41,6 +41,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=1
 
 ```
 
+
 ### Registro 0001 da EFD-ICMS/IPI
 REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=2
 
@@ -49,7 +50,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=2
 | $std | stdClass | Abertura do Bloco 0 |
 
 ```php
-    $std = new stdClass; // Abertura do Bloco 0
+    $std = new stdClass;
     $std->ind_mov = 0; // Indicador de movimento: 0: "Bloco" com dados informados; ou 1: "Bloco" sem dados informados.
 
     $Layout->Registro_0001($std); // Registro 0001 da EFD-ICMS/IPI
