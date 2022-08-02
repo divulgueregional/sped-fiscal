@@ -1,7 +1,7 @@
 #  BLOCO K - SPED FISCAL
 
 ## Descrição
-Gerar o arquivo sped-ficasl do bloco k.
+Gerar o arquivo bloco k do sped fiscal.
 
 # Início
 
