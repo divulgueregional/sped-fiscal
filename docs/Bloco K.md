@@ -37,7 +37,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=1
     $std->ind_perfil = 'A';// Perfil de apresentação do arquivo fiscal: A: Perfil A; B: Perfil B; C: Perfil C.
     $std->ind_ativ = '0'; // Indicador de tipo de atividade:  0: Industrial ou equiparado a industrial; ou 1: Outros
 
-    $Layout->Identificação($std); // Registro 0000 da EFD-ICMS/IPI
+    $Layout->Identificação($std);
 
 ```
 
@@ -53,6 +53,33 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=2
     $std = new stdClass;
     $std->ind_mov = 0; // Indicador de movimento: 0: "Bloco" com dados informados; ou 1: "Bloco" sem dados informados.
 
-    $Layout->Registro_0001($std); // Registro 0001 da EFD-ICMS/IPI
+    $Layout->Registro_0001($std);
+
+```
+
+### Registro 0002 da EFD-ICMS/IPI
+REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=565 e a tabela: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=582
+
+| Parâmetro | Tipo | Descrição |
+| :--- | :---: | :--- |
+| $std | stdClass | Classificação do estabelecimento industrial ou equiparado a industrial |
+
+```php
+    ################################################
+    ## 00 - Industrial - Transformação
+    ## 01 - Industrial - Beneficiamento
+    ## 02 - Industrial - Montagem
+    ## 03 - Industrial - Acondicionamento ou Reacondicionamento
+    ## 04 - Industrial - Renovação ou Recondicionamento
+    ## 05 - Equiparado a industrial - Por opção
+    ## 06 - Equiparado a industrial - Importação Direta
+    ## 07 - Equiparado a industrial - Por lei específica
+    ## 08 - Equiparado a industrial - Não enquadrado nos códigos 05, 06 ou 07
+    ## 09 - Outros
+    ################################################
+    $std = new stdClass;
+    $std->clas_estab_ind = '00'; // Informar a classificação do estabelecimento conforme Tabela acima
+
+    $Layout->Registro_0002($std);
 
 ```
