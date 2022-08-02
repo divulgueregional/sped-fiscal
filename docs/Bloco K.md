@@ -6,7 +6,6 @@ Gerar o arquivo sped-ficasl do bloco k.
 # Início
 
 ### chamar a biblioteca
-Referencia SpedFiscal\Layout
 
 ```php
 require_once '../../../vendor/autoload.php';
@@ -15,11 +14,11 @@ $Layout = new Layout;
 ```
 
 ### Registro 0000 da EFD-ICMS/IPI
-Abertura do Arquivo Digital e Identificação da entidade.
+REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=1
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
-| $std | stdClass | REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=1 |
+| $std | stdClass | Abertura do Arquivo Digital e Identificação da entidade. |
 
 ```php
     $std = new stdClass; // Abertura do Arquivo Digital e Identificação da entidade.
@@ -43,11 +42,11 @@ Abertura do Arquivo Digital e Identificação da entidade.
 ```
 
 ### Registro 0001 da EFD-ICMS/IPI
-Abertura do Bloco 0
+REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=2
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
-| $std | stdClass | REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=2 |
+| $std | stdClass | Abertura do Bloco 0 |
 
 ```php
     $std = new stdClass; // Abertura do Bloco 0
