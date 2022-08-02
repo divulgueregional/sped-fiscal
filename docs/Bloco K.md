@@ -14,7 +14,7 @@ $Layout = new Layout;
 ```
 
 ### Registro 0000 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=1
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=1
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -43,7 +43,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=1
 
 
 ### Registro 0001 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=2
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=2
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -58,7 +58,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=2
 ```
 
 ### Registro 0002 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=565 e a tabela: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=582
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=565 e a tabela: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=582
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -85,7 +85,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=565 e a tabela:
 ```
 
 ### Registro 0005 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=3
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=3
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -108,7 +108,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=3
 
 
 ### Registro 0015 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=4
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=4
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -117,14 +117,14 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=4
 ```php
     $std = new stdClass;
     $std->UF_ST = 'RS'; // 	Sigla da unidade da federação do contribuinte substituído ou unidade de federação do consumidor final não contribuinte - ICMS Destino EC 87/15.
-    $std->IE_ST = '3693136957'; // 	Inscrição Estadual do contribuinte substituto na unidade da federação do contribuinte substituído ou unidade de federação do consumidor final não contribuinte - ICMS Destino EC 87/15.
+    $std->IE_ST = '3693136957'; // Inscrição Estadual do contribuinte substituto na unidade da federação do contribuinte substituído ou unidade de federação do consumidor final não contribuinte - ICMS Destino EC 87/15.
 
     $Layout->Registro_0015($std);
 ```
 
 
 ### Registro 0100 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=5
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=5
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -151,7 +151,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=5
 
 
 ### Registro 0150 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=6
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=6
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -177,7 +177,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=6
 
 
 ### Registro 0175 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=7
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=7
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -194,7 +194,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=7
 
 
 ### Registro 0190 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=8
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=8
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -202,15 +202,15 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=8
 
 ```php
     $std = new stdClass;
-    $std->unid = 'M'; // 	Código da UM.
-    $std->descricao = 'METRO'; // 	Descrição da UM.
+    $std->unid = 'M'; // Código da UM.
+    $std->descricao = 'METRO'; // Descrição da UM.
 
     $Layout->Registro_0190($std);
 ```
 
 
 ### Registro 0200 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=9
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=9
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -254,7 +254,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=9
 
 
 ### Registro 0205 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=10
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=10
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -272,7 +272,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=10
 
 
 ### Registro 0206 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=11
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=11
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -286,7 +286,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=11
 
 
 ### Registro 0210 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=203
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=203
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -303,7 +303,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=203
 
 
 ### Registro 0220 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=12
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=12
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -320,7 +320,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=12
 
 
 ### Registro 0300 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=13
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=13
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -340,7 +340,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=13
 
 
 ### Registro 0305 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=14
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=14
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -357,7 +357,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=14
 
 
 ### Registro 0400 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=15
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=15
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -373,7 +373,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=15
 
 
 ### Registro 0450 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=16
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=16
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -389,7 +389,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=16
 
 
 ### Registro 0460 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=17
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=17
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -405,7 +405,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=17
 
 
 ### Registro 0500 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=18
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=18
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -434,7 +434,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=18
 
 
 ### Registro 0600 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=19
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=19
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |
@@ -462,7 +462,7 @@ REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=19
 
 
 ### Registro 0990 da EFD-ICMS/IPI
-REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=20
+REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=20
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :---: | :--- |

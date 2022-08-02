@@ -2,16 +2,14 @@
 
 ## Introdução
 
-Essa biblioteca foi baseada no site, valor.srv.br, com intuito de fazer a ESCRITURAÇÃO FISCAL DIGITAL – EFD ICMS/IPI, com foco para gerar o arquivo do bloco K
+Essa biblioteca foi baseada no site, valor.srv.br, com intuito de fazer a ESCRITURAÇÃO FISCAL DIGITAL – EFD ICMS/IPI, com foco para gerar apenas os arquivo para meu uso
 
-## OBSERVAÇÃO:
-EM DESENVOLVIMENTO, NÃO ESTÁ PRONTA PARA USO
 
-<!-- ## Como usar:
+## Como usar:
 <b>Instalação: </b>
 Para utilizar a biblioteca através do composer:
 ```php
-composer require divulgueregional/api-bb-php
+composer require divulgueregional/sped-fiscal
 ```
 ## Atualizar:
 ```php
@@ -19,15 +17,20 @@ composer update
 ```
 <b>Ou pela última tag: </b>
 ```php
-composer require divulgueregional/api-bb-php 1.0.1
-``` -->
+composer require divulgueregional/sped-fiscal 1.0.1
+```
 
-<!-- ## Documentação:
+## Documentação:
 Acesse a pasta docs e leia o README.md
 
 ## O QUE VOCÊ PODE UTILIZAR
-<b>BLOCO L</b><br>
-- Gerar o arquivo -->
+<b>Poderá gerar o arquivo</b></b><br>
+- BLOCO K 
+
+<!-- ## VALIDAR O ARQUIVO
+Clique no link <a href='https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/sped-sistema-publico-de-escrituracao-digital/escrituracao-fiscal-digital-efd/escrituracao-fiscal-digital-efd' target='_blank'>Programa EFD</a> para baixar o programa e testar se o arquivo está de acordo com o esperado -->
+
+
 
 
 ## Autor:
