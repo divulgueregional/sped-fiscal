@@ -24,8 +24,9 @@ composer require divulgueregional/sped-fiscal 1.0.1
 Acesse a pasta docs e leia o README.md
 
 ## O QUE VOCÊ PODE UTILIZAR
-<b>Poderá gerar o arquivo</b></b><br>
-- BLOCO K 
+<b>Poderá gerar o arquivo</b><br>
+- BLOCO 0 
+- BLOCO K (Fazendo)
 
 <!-- ## VALIDAR O ARQUIVO
 Clique no link <a href='https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/sped-sistema-publico-de-escrituracao-digital/escrituracao-fiscal-digital-efd/escrituracao-fiscal-digital-efd' target='_blank'>Programa EFD</a> para baixar o programa e testar se o arquivo está de acordo com o esperado -->
