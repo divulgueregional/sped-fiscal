@@ -1,7 +1,7 @@
-# TESTE RÁPIDO BLOCO K SPED-FISCAL
+# TESTE RÁPIDO BLOCO 0 SPED-FISCAL
 
 ## Introdução
-Teste rápido: Gerar o arquivo bloco k do sped fiscal.<br>
+Teste rápido: Gerar o arquivo bloco 0 do sped fiscal.<br>
 Não precisa alterar nenhum valor<br>
 Só colocar no php e rodar que vai salvar o arquivo na pasta
 
