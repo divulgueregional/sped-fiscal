@@ -1,17 +1,8 @@
 #  BLOCO K - SPED FISCAL
 
 ## Descrição
-Gerar o arquivo bloco K do sped fiscal.
+Bloco K do sped fiscal.<br>
 
-# Início
-
-### chamar a biblioteca
-
-```php
-require_once '../../../vendor/autoload.php';
-use Divulgueregional\SpedFiscal\Layout;
-$Layout = new Layout;
-```
 
 ### Registro K001 da EFD-ICMS/IPI
 REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=204
@@ -422,24 +413,4 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=212
 
 ```php
     $Bloco->K990('K990');
-```
-
-
-### Salvar dados do SPED
-Salvar na pasta ou fazer o download ao rodar no navegador
-
-```php
-    // dados do SPED
-    $result = $Bloco->getRegistros();
-
-    // Salvar na pasta
-    $filename = "SPED.txt";
-    file_put_contents($filename, $result);
-    chmod($filename, 0777);
-
-    //no navegador
-    header("Content-Type: text/plain");
-    header('Content-Disposition: attachment; filename="' . $filename . '"');
-    header("Content-Length: " . strlen($result));
-    echo $result;
 ```
