@@ -12,6 +12,14 @@ class Sped
         //definir
     }
 
+    // function criarRegistroStd(stdClass $registro) {
+    //     $linha = '|';
+    //     foreach ($registro as $chave => $valor) {
+    //         $linha .= $valor . '|';
+    //     }
+    //     $this->registros[] = $linha;
+    // }
+
     ###############################################################
     ############ CRIAR LINHA ######################################
     ###############################################################
@@ -20,6 +28,18 @@ class Sped
         $this->incrementContadorBloco($bloco);
         $this->incrementContadorBlocoRegistro($blocoRegistro);
         $this->registros[] = $registro;
+    }
+
+    public function getTotalLinhas() {
+        return count($this->registros);
+    }
+
+    ###############################################################
+    ############ BLOCO ############################################
+    ###############################################################
+    function criarBlocoVazio($bloco, $abertura, $fechamento) {
+        $this->criarLinha($bloco, $abertura, "|$abertura|1|");
+        $this->criarEncerramentoBloco($bloco, $fechamento, $fechamento);
     }
 
     private function incrementContadorBloco(string $bloco) {
@@ -38,6 +58,16 @@ class Sped
         }
     }
 
+    public function getContadorBloco(string $bloco) {
+        return ($this->contadorBlocos["$bloco"] ?? 0);
+    }
+
+    public function getBlocosTotalizadores() {
+        ksort($this->contadorBlocosRegistro, SORT_NATURAL);
+
+        return $this->contadorBlocosRegistro;
+    }
+
     ###############################################################
     ############ ENCERRAMENTO DE BLOCO ############################
     ###############################################################
@@ -47,10 +77,7 @@ class Sped
         $qtdRegistrosBloco = $this->getContadorBloco($bloco);
         $this->registros[] = "|$registro|" . ($qtdRegistrosBloco + $incrementoAdicional) . "|";
     }
-
-    public function getContadorBloco(string $bloco) {
-        return ($this->contadorBlocos["$bloco"] ?? 0);
-    }
+    
     ###############################################################
     ############ DADOS PARA GERAR O ARQUIVO #######################
     ###############################################################
@@ -62,4 +89,5 @@ class Sped
 
         return $todosOsRegistros;
     }
+    
 }
