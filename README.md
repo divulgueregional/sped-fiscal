@@ -28,6 +28,7 @@ Acesse a pasta docs e leia o README.md
 - BLOCO 0 
 - BLOCO H
 - BLOCO K
+- BLOCO 9
 
 <!-- ## VALIDAR O ARQUIVO
 Clique no link <a href='https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/sped-sistema-publico-de-escrituracao-digital/escrituracao-fiscal-digital-efd/escrituracao-fiscal-digital-efd' target='_blank'>Programa EFD</a> para baixar o programa e testar se o arquivo está de acordo com o esperado -->
