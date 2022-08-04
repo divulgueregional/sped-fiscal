@@ -6,7 +6,7 @@ Como gerar o arquivo do sped fiscal.<br>
 <b>Testar de forma rápido</b><br>
 Tem um exemplo em _Teste Rapido.md
 
-<br<br>
+<br><br>
 
 <b>Criação do arquivo</b><br>
 1- Chamar a biblioteca conforme _Instanciar a Biblioteca.md<br>
