@@ -1,17 +1,8 @@
 #  BLOCO 0 - SPED FISCAL
 
 ## Descrição
-Gerar o arquivo bloco 0 do sped fiscal.
+Bloco 0 do sped fiscal.<br>
 
-# Início
-
-### chamar a biblioteca
-
-```php
-require_once '../../../vendor/autoload.php';
-use Divulgueregional\SpedFiscal\Layout;
-$Layout = new Layout;
-```
 
 ### Registro 0000 da EFD-ICMS/IPI
 REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=1
@@ -469,7 +460,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=20
 | $std | stdClass | Encerramento do Bloco 0 |
 
 ```php
-    $Layout->Registro_0990('0990');
+    $Layout->Registro_0990();
 ```
 
 
