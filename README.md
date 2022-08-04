@@ -24,7 +24,7 @@ composer require divulgueregional/sped-fiscal 1.0.2
 Acesse a pasta docs e leia o README.md
 
 ## O QUE VOCÊ PODE UTILIZAR
-<b>Poderá gerar o arquivo</b><br>
+<b>Poderá gerar o arquivo com</b><br>
 - BLOCO 0 
 - BLOCO H
 - BLOCO K
