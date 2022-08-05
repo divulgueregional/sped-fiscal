@@ -60,10 +60,13 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=206
 
 ```php
     $std = new stdClass;
-    $std->DT_EST = '01082022'; // Data inicial a que a apuração se refere.
-    $std->COD_ITEM = '123'; // Data final a que a apuração se refere.
-    $std->QTD = '10'; // Data final a que a apuração se refere.
-    $std->IND_EST = '0'; // Indicador do tipo de estoque: 0: Estoque de propriedade do informante e em seu poder; 1: Estoque de propriedade do informante e em posse de terceiros; 2: Estoque de propriedade de terceiros e em posse do informante.
+    $std->DT_EST = '01082022'; // Data do estoque final.
+    $std->COD_ITEM = '123'; // Código do item (campo 02 do Registro 0200)
+    $std->QTD = '10'; // Quantidade em estoque.
+    $std->IND_EST = '0'; // Indicador do tipo de estoque: 
+    // 0: Estoque de propriedade do informante e em seu poder; 
+    // 1: Estoque de propriedade do informante e em posse de terceiros; 
+    // 2: Estoque de propriedade de terceiros e em posse do informante.
     $std->COD_PART = 'registro 150'; // Código do participante (campo 02 do Registro 0150): - proprietário/possuidor que não seja o informante do arquivo.
 
     $Bloco->K200($std);
