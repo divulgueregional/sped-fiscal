@@ -17,7 +17,7 @@ composer update
 ```
 <b>Ou pela última tag: </b>
 ```php
-composer require divulgueregional/sped-fiscal 1.0.3
+composer update divulgueregional/sped-fiscal 1.0.3
 ```
 
 ## Documentação:
