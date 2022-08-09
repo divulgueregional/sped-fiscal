@@ -1,7 +1,7 @@
 # DOCUMENTAÇÃO SPED-FISCAL
 
 ## Introdução
-Como gerar o arquivo do sped fiscal.<br>
+Toda a biblioteca foi baseada no site https://www.valor.srv.br/guias/guiasIndex.php?idGuia=200 com o objetivo de gerar o arquivo do sped fiscal.<br>
 
 <b>Testar de forma rápido</b><br>
 Tem um exemplo em _Teste Rapido.md
