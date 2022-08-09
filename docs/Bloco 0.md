@@ -28,7 +28,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=1
     $std->ind_perfil = 'A';// Perfil de apresentação do arquivo fiscal: A: Perfil A; B: Perfil B; C: Perfil C.
     $std->ind_ativ = '0'; // Indicador de tipo de atividade:  0: Industrial ou equiparado a industrial; ou 1: Outros
 
-    $Layout->Identificação($std);
+    $Bloco->Identificação($std);
 
 ```
 
@@ -44,7 +44,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=2
     $std = new stdClass;
     $std->ind_mov = 0; // Indicador de movimento: 0: "Bloco" com dados informados; ou 1: "Bloco" sem dados informados.
 
-    $Layout->Registro_0001($std);
+    $Bloco->Registro_0001($std);
 
 ```
 
@@ -71,7 +71,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=565 e a tabela
     $std = new stdClass;
     $std->clas_estab_ind = '00'; // Informar a classificação do estabelecimento conforme Tabela acima
 
-    $Layout->Registro_0002($std);
+    $Bloco->Registro_0002($std);
 
 ```
 
@@ -94,7 +94,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=3
     $std->fax = ''; // 	Número do fax.
     $std->email = 'meu_email@gmail.com'; // Endereço do correio eletrônico.
 
-    $Layout->Registro_0005($std);
+    $Bloco->Registro_0005($std);
 ```
 
 
@@ -110,7 +110,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=4
     $std->UF_ST = 'RS'; // 	Sigla da unidade da federação do contribuinte substituído ou unidade de federação do consumidor final não contribuinte - ICMS Destino EC 87/15.
     $std->IE_ST = '3693136957'; // Inscrição Estadual do contribuinte substituto na unidade da federação do contribuinte substituído ou unidade de federação do consumidor final não contribuinte - ICMS Destino EC 87/15.
 
-    $Layout->Registro_0015($std);
+    $Bloco->Registro_0015($std);
 ```
 
 
@@ -137,7 +137,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=5
     $std->EMAIL = 'email_contador@gmail.com'; // Endereço do correio eletrônico.
     $std->COD_MUN = '4305108'; // Código do município, conforme tabela IBGE.
 
-    $Layout->Registro_0100($std);
+    $Bloco->Registro_0100($std);
 ```
 
 
@@ -163,7 +163,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=6
     $std->COMPL = ''; // Dados complementares do endereço.
     $std->BAIRRO = 'Bairro'; // Bairro em que o imóvel está situado.
 
-    $Layout->Registro_0150($std);
+    $Bloco->Registro_0150($std);
 ```
 
 
@@ -180,7 +180,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=7
     $std->NR_CAMPO = '03'; // Número do campo alterado (Somente campos 03 a 13, exceto 07). Valores Válidos: [03, 04, 05, 06, 08, 09, 10, 11, 12, 13].
     $std->CONT_ANT = ''; // Conteúdo anterior do campo.
 
-    $Layout->Registro_0175($std);
+    $Bloco->Registro_0175($std);
 ```
 
 
@@ -196,7 +196,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=8
     $std->unid = 'M'; // Código da UM.
     $std->descricao = 'METRO'; // Descrição da UM.
 
-    $Layout->Registro_0190($std);
+    $Bloco->Registro_0190($std);
 ```
 
 
@@ -240,7 +240,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=9
     $std->ALIQ_ICMS = '18,00'; // Alíquota de ICMS aplicável ao item nas operações internas.
     $std->CEST = '1007900'; // Código Especificador da Substituição Tributária
 
-    $Layout->Registro_0200($std);
+    $Bloco->Registro_0200($std);
 ```
 
 
@@ -258,7 +258,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=10
     $std->DT_FIM = '31082022'; // Data final de utilização da descrição do item.
     $std->COD_ANT_ITEM = ''; // Código anterior do item com relação à última informação apresentada.
 
-    $Layout->Registro_0205($std);
+    $Bloco->Registro_0205($std);
 ```
 
 
@@ -272,7 +272,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=11
 ```php
     $std = new stdClass;
     $std->COD_COMB = '123'; // Código do produto, conforme tabela publicada pela ANP.
-    $Layout->Registro_0206($std);
+    $Bloco->Registro_0206($std);
 ```
 
 
@@ -289,7 +289,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=203
     $std->QTD_COMP = '10'; // Quantidade do item componente/insumo para se produzir uma unidade do item composto/resultante.
     $std->PERDA = ''; // Perda/quebra normal percentual do insumo/componente para se produzir uma unidade do item compoto/resultante.
 
-    $Layout->Registro_0210($std);
+    $Bloco->Registro_0210($std);
 ```
 
 
@@ -306,7 +306,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=12
     $std->FAT_CONV = '1'; // Fator de conversão: fator utilizado para converter (multiplicar) a unidade a ser convertida na unidade adotada no inventário.
     $std->COD_BARRA = ''; // Representação alfanumérica do código de barra da unidade comercial do produto, se houver.
 
-    $Layout->Registro_0220($std);
+    $Bloco->Registro_0220($std);
 ```
 
 
@@ -326,7 +326,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=13
     $std->COD_CTA = '1'; // Código da conta analítica de contabilização do bem ou componente (campo 06 do Registro 0500).
     $std->NR_PARC = '24'; // Número total de parcelas a serem apropriadas, segundo a legislação de cada Unidade Federada (UF)..
 
-    $Layout->Registro_0300($std);
+    $Bloco->Registro_0300($std);
 ```
 
 
@@ -343,7 +343,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=14
     $std->FUNC = 'Descrição sucinta da função'; // Descrição sucinta da função do bem na atividade do estabelecimento.	
     $std->VIDA_UTIL = '24'; // Vida útil estimada do bem, em número de meses.
 
-    $Layout->Registro_0305($std);
+    $Bloco->Registro_0305($std);
 ```
 
 
@@ -359,7 +359,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=15
     $std->COD_NAT = '1234567890'; // Código da natureza da operação/prestação.
     $std->DESCR_NAT = 'NATUREZA DA OPERAÇÃO'; // Descrição da natureza da operação/prestação.
 
-    $Layout->Registro_0400($std);
+    $Bloco->Registro_0400($std);
 ```
 
 
@@ -375,7 +375,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=16
     $std->COD_INF = '123456'; // Código da informação complementar do documento fiscal.
     $std->TXT = 'Texto livre da informação complementar'; // Texto livre da informação complementar existente no documento fiscal, inclusive espécie de normas legais, poder normativo, número, capitulação, data e demais referências pertinentes com indicação referentes ao tributo.
 
-    $Layout->Registro_0450($std);
+    $Bloco->Registro_0450($std);
 ```
 
 
@@ -391,7 +391,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=17
     $std->COD_OBS = '123456'; // Código da Observação do lançamento fiscal.
     $std->TXT = 'TESTE DE OBS FISCAL'; // Descrição da observação vinculada ao lançamento fiscal
 
-    $Layout->Registro_0460($std);
+    $Bloco->Registro_0460($std);
 ```
 
 
@@ -420,7 +420,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=18
     $std->COD_CTA = '5000'; // Código da conta analítica/grupo de contas.
     $std->NOME_CTA = 'OUTRAS DESPESAS'; // Nome da conta analítica/grupo de contas.
 
-    $Layout->Registro_0500($std);
+    $Bloco->Registro_0500($std);
 ```
 
 
@@ -448,7 +448,7 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=19
     $std->COD_CCUS = '3'; // Código do centro de custos.
     $std->CCUS = 'área produtiva'; // Nome do centro de custos.
 
-    $Layout->Registro_0600($std);
+    $Bloco->Registro_0600($std);
 ```
 
 
@@ -460,25 +460,5 @@ REFERÊNCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=20
 | $std | stdClass | Encerramento do Bloco 0 |
 
 ```php
-    $Layout->Registro_0990();
-```
-
-
-### Salvar dados do SPED
-Salvar na pasta ou fazer o download ao rodar no navegador
-
-```php
-    // dados do SPED
-    $result = $Layout->getRegistros();
-
-    // Salvar na pasta
-    $filename = "SPED.txt";
-    file_put_contents($filename, $result);
-    chmod($filename, 0777);
-
-    //no navegador
-    header("Content-Type: text/plain");
-    header('Content-Disposition: attachment; filename="' . $filename . '"');
-    header("Content-Length: " . strlen($result));
-    echo $result;
+    $Bloco->Registro_0990();
 ```
