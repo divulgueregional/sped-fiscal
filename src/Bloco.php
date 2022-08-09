@@ -269,7 +269,7 @@ class Bloco
     // REFERENCIA: https://www.valor.srv.br/guias/guiasIndex.php?idGuia=206
     public function K200($std)
     {
-        $this->Sped->criarLinha('0', 'K200', "|K200|{$this->Funcoes->somenteNumeros($this->Funcoes->tamanhoString($std->DT_EST, 8))}|{$this->Funcoes->textoMaiusculo($this->Funcoes->tamanhoString($std->COD_ITEM, 60))}{$this->Funcoes->textoMaiusculo($this->Funcoes->tamanhoString($std->QTD, 50))}{$this->Funcoes->somenteNumeros($this->Funcoes->tamanhoString($std->IND_EST, 1))}|{$this->Funcoes->textoMaiusculo($this->Funcoes->tamanhoString($std->COD_PART, 60))}|");
+        $this->Sped->criarLinha('0', 'K200', "|K200|{$this->Funcoes->somenteNumeros($this->Funcoes->tamanhoString($std->DT_EST, 8))}|{$this->Funcoes->textoMaiusculo($this->Funcoes->tamanhoString($std->COD_ITEM, 60))}|{$this->Funcoes->textoMaiusculo($this->Funcoes->tamanhoString($std->QTD, 50))}|{$this->Funcoes->somenteNumeros($this->Funcoes->tamanhoString($std->IND_EST, 1))}|{$this->Funcoes->textoMaiusculo($this->Funcoes->tamanhoString($std->COD_PART, 60))}|");
     }
 
     // Registro K220 da EFD-ICMS/IPI - Outras movimentações internas entre mercadorias
